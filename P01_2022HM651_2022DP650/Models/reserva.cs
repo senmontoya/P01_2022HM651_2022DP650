@@ -9,7 +9,8 @@
         public int CantidadHoras { get; set; }
         public string Estado { get; set; }
         public decimal CostoTotal { get; set; }
-        public usuario Usuario { get; set; }
+
+        // public usuario Usuario { get; set; }
         public espacioparqueo EspacioParqueo { get; set; }
     }
 }
