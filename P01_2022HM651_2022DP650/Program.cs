@@ -11,10 +11,10 @@ builder.Services.AddDbContext<parqueoContext>(options => options.UseSqlServer
     )
 );
 
-//builder.Services.AddDbContext<parqueoContext>(options => options.UseSqlServer
-//    (builder.Configuration.GetConnectionString("parqueoDamian")
-//    )
-//);
+builder.Services.AddDbContext<parqueoContext>(options => options.UseSqlServer
+    (builder.Configuration.GetConnectionString("parqueoDamian")
+    )
+);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

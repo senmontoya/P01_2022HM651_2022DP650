@@ -9,5 +9,7 @@ namespace P01_2022HM651_2022DP650.Models
         }
 
         public DbSet<usuario> usuarios { get; set; }
+        public DbSet<sucursal> sucursales { get; set; }
+        public DbSet<espacioparqueo> espaciosParqueo { get; set; }
     }
 }
