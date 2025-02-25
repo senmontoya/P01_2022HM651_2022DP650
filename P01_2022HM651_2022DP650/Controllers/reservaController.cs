@@ -16,7 +16,7 @@ namespace P01_2022HM651_2022DP650.Controllers
             _parqueoContexto = restauranteContexto;
         }
 
-        // Crear una reserva
+        
         [HttpPost]
         [Route("CrearReserva")]
         public IActionResult CrearReserva([FromBody] reserva nuevaReserva)
@@ -42,7 +42,7 @@ namespace P01_2022HM651_2022DP650.Controllers
             }
         }
 
-        // Mostrar lista de reservas activas del usuario
+        
         [HttpGet]
         [Route("ObtenerReservasUsuario/{usuarioId}")]
         public IActionResult ObtenerReservasUsuario(int usuarioId)
@@ -68,7 +68,7 @@ namespace P01_2022HM651_2022DP650.Controllers
             return Ok(reservas);
         }
 
-        // Cancelar una reserva antes de su uso
+       
         [HttpPut]
         [Route("CancelarReserva/{reservaId}")]
         public IActionResult CancelarReserva(int reservaId)
@@ -96,7 +96,7 @@ namespace P01_2022HM651_2022DP650.Controllers
             }
         }
 
-        // Mostrar lista de espacios reservados por día de todas las sucursales
+        
         [HttpGet]
         [Route("ObtenerReservasPorDia/{fecha}")]
         public IActionResult ObtenerReservasPorDia(DateTime fecha)
@@ -122,7 +122,7 @@ namespace P01_2022HM651_2022DP650.Controllers
             return Ok(reservas);
         }
 
-        // Mostrar lista de espacios reservados entre dos fechas en una sucursal específica
+        
         [HttpGet]
         [Route("ObtenerReservasPorRangoFechas/{sucursalId}/{fechaInicio}/{fechaFin}")]
         public IActionResult ObtenerReservasPorRangoFechas(int sucursalId, DateTime fechaInicio, DateTime fechaFin)

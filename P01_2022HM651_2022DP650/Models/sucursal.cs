@@ -9,6 +9,6 @@
         public int? AdministradorId { get; set; }
         public int NumEspaciosDisponibles { get; set; }
 
-        // public usuario Administrador { get; set; }
+        public usuario Administrador { get; set; }
     }
 }
